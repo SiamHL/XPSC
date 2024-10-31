@@ -22,7 +22,7 @@ int main() {
         if (v.front() > v.back()) {
             if (turn) {
                 sum1 += v.front();
-                v.erase(v.begin());  // Remove the first element
+                v.erase(v.begin()); 
             } else {
                 sum2 += v.front();
                 v.erase(v.begin());
@@ -30,13 +30,13 @@ int main() {
         } else {
             if (turn) {
                 sum1 += v.back();
-                v.pop_back();  // Remove the last element
+                v.pop_back();
             } else {
                 sum2 += v.back();
                 v.pop_back();
             }
         }
-        turn = !turn;  // Switch turns
+        turn = !turn;
     }
 
     cout << sum1 << " " << sum2;
